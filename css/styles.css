@@ -1,0 +1,293 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin:0;
+    padding:0;
+    background: linear-gradient(-90deg, #0b0c10, #1f2833);
+}
+
+/* global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background: #0b0c10;
+    color:#66fcf1;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom: #1f2833 solid 2px;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo{
+    float:left;
+}
+
+header #logo h1{
+    margin:0;
+    padding-bottom:2px;
+    padding-top:8px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header nav{
+    margin-top:5px;
+    float: right;
+    /*font-weight: 700; */
+}
+
+header .highlight {
+    color: white;
+    font-weight:bold;
+}
+
+header .current a{
+    color:#66fcf1;
+}
+
+header a:hover{
+    color: orangered;
+}
+
+.btn-1{
+    height:38px;
+    background:#45a29e;
+    border: 1px solid #66fcf1;
+    border-radius: 2px;
+    color: #66fcf1;
+}
+
+/* banner */
+#banner{
+    min-height:300px;
+    background: url('../img/image01.jpg') no-repeat 0 -900px;
+    background-size: cover;
+    text-align: center;
+    color:white;
+}
+
+#banner h1{
+    margin-top:140px;
+    font-size:55px;
+    line-height: 60px;
+    margin-bottom:40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#banner p{
+    font-size: 15px;
+    color: #c5c6c7;
+}
+
+/*news */
+#subscribe-area{
+    padding:15px;
+    color: white;
+    background: #0b0c10;
+}
+
+#subscribe-area h1{
+    float:left;
+}
+
+#subscribe-area form{
+    float:right;
+    margin-top:11px;
+}
+
+#subscribe-area input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+/* boxes */
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float:left;
+    width:30%;
+    padding:10px;
+    text-align: center;
+    color:#66fcf1;
+}
+
+#boxes .box h3{
+    color:#c5c6c7;
+}
+
+#boxes .box p{
+    color:#45a29e;
+    font-size:12px;
+}
+
+#boxes .box i #icon1{
+    color: #45a29e;
+}
+
+/* main-col */
+article#main-col{
+    float:left;
+    width:65%;
+}
+
+article#main-col h1{
+    color:#c5c6c7;
+}
+
+article#main-col p{
+    color:#66fcf1;
+}
+
+/* sidebar */
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+}
+
+aside#sidebar h1{
+    color:#c5c6c7; 
+}
+
+aside#sidebar p{
+    color:#45a29e;
+}
+/* services */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border:#c5c6c7 solid 2px;
+    border-radius:1px;
+    margin-bottom:5px;
+    background:#45a29e;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+        width:80%;
+        padding:5px;
+        margin-bottom:5px;
+}
+
+aside#sidebar .quote label{
+    color: #45a29e;
+    margin:5px;
+}
+
+/* footer */
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#66fcf1;
+    background: #45a29e;
+    text-align: center;
+    font-weight:bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* media queries */
+@media(max-width:768px){
+    header #logo,
+    header nav,
+    header nav li
+    {
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 5px;
+    }
+
+    header #logo{
+        padding-bottom:5px;
+    }
+
+    #banner h1{
+        margin-top:40px;
+        line-height:50px;
+        font-size: 200%;
+    }
+    /*subscribe-area */
+
+    #subscribe-area h1{
+        float: none;
+        text-align: center;
+    }
+    #subscribe-area form{
+        float: none;
+        text-align: center;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    #subscribe-area form input[type="email"]{
+      width: 100%;
+      margin:0 2px 5px 2px;
+    }
+
+    #subscribe-area form .btn-1{
+        width: 100%;
+      margin:0 2px 5px 2px;
+      }
+
+      /* boxes */
+
+      #boxes .box{
+          width:100%;
+          float:none;
+          text-align: center;
+      }
+
+      /* article and aside */
+
+      article#main-col, aside#sidebar{
+        width:100%;
+        float:none;
+        text-align: center;
+      }
+
+      aside#sidebar .quote .btn-1{
+          width:100%;
+      }
+      aside#sidebar .quote input[type="text"],
+      aside#sidebar .quote input[type="email"],
+      aside#sidebar .quote textarea
+      {
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+
